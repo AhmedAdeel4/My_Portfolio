@@ -19,6 +19,7 @@ root.render(
 
 // ---------------------------------------------------------------------------
 // npm i -D react-router-dom@latest
+// npm install sass
 // npm i bootstrap@latest
 // npm i axios
 // npm i recoil
