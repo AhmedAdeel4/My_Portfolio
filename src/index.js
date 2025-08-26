@@ -4,6 +4,7 @@ import './index.css';
 import App from './App';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min.js';
+import "bootstrap-icons/font/bootstrap-icons.css";  
 import 'animate.css';
 import { RecoilRoot } from 'recoil';
 
@@ -21,6 +22,11 @@ root.render(
 // npm i -D react-router-dom@latest
 // npm install sass
 // npm i bootstrap@latest
+// npm install @fortawesome/fontawesome-svg-core
+// npm install @fortawesome/free-solid-svg-icons
+// npm install @fortawesome/react-fontawesome
+// npm i bootstrap-icons
+// npm install react-scroll
 // npm i axios
 // npm i recoil
 // npm i font-awesome

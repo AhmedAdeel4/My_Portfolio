@@ -1,5 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+// import { Link } from "react-scroll";
 import './Header.css'
 
 export default function Header() {
@@ -11,7 +12,7 @@ export default function Header() {
         </Link>
         <nav>
             <Link className='Link' to='/'>Home</Link>
-            <Link className='Link' to='#'>About</Link>
+            <Link className='Link' to='#one>'>About</Link>
             <Link className='Link' to='#'>Skills</Link>
             <Link className='Link' to='#'>Projects</Link>
             <Link className='Link' to='#'>Contact</Link>
