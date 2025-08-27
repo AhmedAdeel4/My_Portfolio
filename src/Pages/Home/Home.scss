@@ -1,4 +1,4 @@
-.Hero {
+.contaner {
   height: 100vh;
   padding: 0 10rem;
   padding-bottom: 8rem;
@@ -8,8 +8,10 @@
   align-content: center;
   justify-content: space-around;
   align-items: center;
+  background-image: url(../../Components/Photos/BG.png);
 
   .Left {
+    background-color: transparent;
     padding-left: 6rem;
     display: flex;
     flex-direction: column;
@@ -21,6 +23,8 @@
   }
 
   h5 {
+    background-color: transparent;
+
     font-size: 1.15rem;
     border: 1px #195fd0 solid;
     border-radius: 3rem;
@@ -30,6 +34,8 @@
   }
 
   h1 {
+    background-color: transparent;
+
     font-size: 4rem;
     font-family: inherit;
     span {
@@ -38,19 +44,23 @@
   }
 
   h3 {
+    background-color: transparent;
+
     color: #858c97;
     font-family: inherit;
     text-decoration: underline;
   }
 
   p {
+    background-color: transparent;
     text-align: start;
     width: 80%;
     font-size: 1.2rem;
   }
 
   button {
-    font-size: 1.3rem;
+    font-size: 1rem;
+    background-color: transparent;
   }
 
   .tools {
@@ -59,10 +69,12 @@
       border: 1px solid #858c97;
       border-radius: 3rem;
       margin: 0 0.5rem;
-      padding: 0.3rem 0.8rem;
+      padding: 0.1rem;
+      padding-right: 1rem;
+      background-color: #282b30b9;
       img {
-        height: 25px;
-        width: 25px;
+        height: 20px;
+        width: 20px;
         margin: 1rem;
       }
     }
@@ -71,6 +83,8 @@
 
 .Right {
   margin-right: 10rem;
+  background-color: transparent;
+
   img {
     height: 23rem;
     width: 23rem;
@@ -405,5 +419,122 @@
       padding: 0 1rem;
       margin: 0 0.3rem;
     }
+  }
+}
+
+// ------------------------------------------------------------------------------------------------------------------------------------------
+
+#connect {
+  height: 80vh;
+  padding: 0 10rem;
+  background-color: #0b0e13;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  h2 {
+    color: #dfe2e9;
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    background-color: #0b0e13;
+  }
+
+  p {
+    width: 50%;
+    color: #858c97;
+    font-size: 1.2rem;
+    margin-bottom: 3rem;
+    background-color: #0b0e13;
+  }
+  div {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    background-color: #0b0e13;
+
+    div {
+      height: 10rem;
+      width: 30%;
+      margin: 0.5rem;
+      display: flex;
+      flex-direction: column;
+      flex-wrap: nowrap;
+      align-content: center;
+      justify-content: center;
+      align-items: center;
+      border: 1px #858c97 solid;
+      border-radius: 1rem;
+      background-color: #0b0e13;
+
+      i {
+        font-size: 1.5rem;
+        margin-bottom: 0.5rem;
+        color: #0f46a0;
+        background-color: #0b0e13;
+      }
+      h5 {
+        font-size: 1.2rem;
+        color: #dfe2e9;
+        background-color: #0b0e13;
+      }
+      h6 {
+        color: #858c97;
+        background-color: #0b0e13;
+      }
+    }
+  }
+  .social {
+    margin: 5rem;
+    i {
+      margin: 0 0.5rem;
+      width: 2rem;
+      height: 2rem;
+      padding: 1.5rem;
+      display: flex;
+      background-color: transparent;
+      border: 1px #a9b0b9 solid;
+      border-radius: 50%;
+      flex-direction: column;
+      flex-wrap: nowrap;
+      align-content: center;
+      justify-content: center;
+      align-items: center;
+      color: #a9b0b9;
+    }
+  }
+  .social i:hover {
+    background-color: #062346;
+  }
+}
+
+// --------------------------------------------------------
+
+#end {
+  border-top: 1px #484b4e solid;
+  p {
+    font-size: 1.2rem;
+    padding: 1rem;
+    color: #484b4e;
+  }
+}
+
+@media (max-width: 767px) {
+  .Hero {
+    height: 100vh;
+    padding: 30rem 2rem;
+    padding-bottom: 8rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-around;
+    align-items: center;
+    background-image: url(../../Components/Photos/BG.png);
   }
 }

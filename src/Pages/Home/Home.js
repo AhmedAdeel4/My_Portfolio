@@ -6,14 +6,13 @@ import css from "../../Components/Photos/css-3.png";
 import js from "../../Components/Photos/js.png";
 import react from "../../Components/Photos/react.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faReact, faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
-
+import { faReact } from "@fortawesome/free-brands-svg-icons";
 
 export default function Home() {
   return (
-    <div>
-      <section>
-        <div className="Hero">
+    <div className="all">
+      <section id="home">
+        <div className="contaner">
           <div className="Left ">
             <h5 className="mb-3">Available for Freelance Work</h5>
             <h1 className="mb-3">
@@ -64,7 +63,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section-2 id="one">
+      <section-2 id="about">
         <div className="hero_2">
           <h1 className="head">
             About <span className="me">Me</span>
@@ -132,7 +131,7 @@ export default function Home() {
         </div>
       </section-2>
 
-      <section>
+      <section id="skills">
         <div className="hero_3">
           <h2>My Skills</h2>
           <p className="head">
@@ -141,53 +140,52 @@ export default function Home() {
           </p>
 
           <div className="box">
-
             <div className="front">
               <div className="icon">
                 <FontAwesomeIcon icon={faReact} />
               </div>
               <div className="info">
                 <h3>Front-End Development</h3>
-              <p>
-                Building responsive and optimized web applications with modern
-                frameworks.
-              </p>
+                <p>
+                  Building responsive and optimized web applications with modern
+                  frameworks.
+                </p>
 
-              <div className="tools">
-                <span className="html">
-                  <i class="bi bi-filetype-html"></i> HTML
-                </span>
-                <span className="css">
-                  <i class="bi bi-css"></i> CSS
-                </span>
-                <span className="js">
-                  <i class="bi bi-javascript"></i> JS
-                </span>
-                <span className="react">
-                  <FontAwesomeIcon icon={faReact} /> React
-                </span>
-              </div>
+                <div className="tools">
+                  <span className="html">
+                    <i class="bi bi-filetype-html"></i> HTML
+                  </span>
+                  <span className="css">
+                    <i class="bi bi-css"></i> CSS
+                  </span>
+                  <span className="js">
+                    <i class="bi bi-javascript"></i> JS
+                  </span>
+                  <span className="react">
+                    <FontAwesomeIcon icon={faReact} /> React
+                  </span>
+                </div>
               </div>
             </div>
-            
+
             <div className="developer">
               <div className="icon">
                 <i class="bi bi-tools"></i>
               </div>
               <div className="info">
                 <h3>Development Tools</h3>
-              <p>
-                Optimizing workflows with modern development and build tools.
-              </p>
+                <p>
+                  Optimizing workflows with modern development and build tools.
+                </p>
 
-              <div className="tools">
-                <span className="css">
-                  <i class="fa-regular fa-brackets-curly"></i>ESLint
-                </span>
-                <span className="js">
-                  <i class="fa-brands fa-pinterest"></i> Prettier
-                </span>
-              </div>                
+                <div className="tools">
+                  <span className="css">
+                    <i class="fa-regular fa-brackets-curly"></i>ESLint
+                  </span>
+                  <span className="js">
+                    <i class="fa-brands fa-pinterest"></i> Prettier
+                  </span>
+                </div>
               </div>
             </div>
 
@@ -197,24 +195,65 @@ export default function Home() {
               </div>
               <div className="info">
                 <h3>Version Control & Deployment</h3>
-              <p>
-                Managing code collaboration and deploying applications
-                efficiently.
-              </p>
+                <p>
+                  Managing code collaboration and deploying applications
+                  efficiently.
+                </p>
 
-              <div className="tools">
-                <span className="html">
-                  <i class="bi bi-git"></i> Git
-                </span>
-                <span className="css">
-                  <i class="bi bi-github"></i> GitHub
-                </span>
-              </div>
+                <div className="tools">
+                  <span className="html">
+                    <i class="bi bi-git"></i> Git
+                  </span>
+                  <span className="css">
+                    <i class="bi bi-github"></i> GitHub
+                  </span>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </section>
+
+      <section id="connect">
+        <h2>Let's Connect</h2>
+        <p>
+          Have a project in mind or want to discuss opportunities? I'm always
+          open to talking about creative ideas and new projects.
+        </p>
+        <div>
+
+          <div>
+            <i class="bi bi-geo-alt"></i>
+            <h5>Location</h5>
+            <h6>Cairo, Egypt</h6>
+          </div>
+
+          <div>
+            <i class="bi bi-envelope-at-fill"></i>
+            <h5>Email</h5>
+            <h6>Cairo, Egypt</h6>
+          </div>
+
+          <div>
+            <i class="bi bi-telephone-fill"></i>
+            <h5>Phone</h5>
+            <h6>+20 1111299229</h6>
+          </div>
+
+        </div>
+
+        <div className="social">
+          <i class="bi bi-github"></i>
+          <i class="bi bi-linkedin"></i>
+          <i class="bi bi-whatsapp"></i>
+        </div>
+
+      </section>
+
+      <section id="end">
+        <p>© 2025 Ahmed Adel.</p>
+      </section>
+
     </div>
   );
 }
