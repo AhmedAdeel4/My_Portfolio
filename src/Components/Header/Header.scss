@@ -1,0 +1,64 @@
+.Header {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-content: center;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  padding: 0.5rem 10rem;
+  font-size: 1.2rem;
+  background-color: #0d1117;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  .logo {
+    font-size: 1.5rem;
+    color: white;
+    text-decoration: none;
+    .Dot {
+      color: #195fd0;
+      font-size: 2rem;
+    }
+  }
+  .nav {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+    li a {
+      color: white;
+      text-decoration: none;
+      transition: color 0.3s;
+      &:hover {
+        color: #195fd0;
+      }
+    }
+  }
+  .menu-icon {
+    display: none;
+    font-size: 26px;
+    cursor: pointer;
+  }
+  @media (max-width: 768px) {
+    padding: 0.5rem 2rem;
+    font-size: 1rem;
+
+    .nav {
+      display: none;
+      width: 50%;
+      flex-direction: column;
+      background-color: #181e27;
+      position: absolute;
+      top: 60px;
+      right: 20px;
+      padding: 15px;
+      border-radius: 10px;
+      &.open {
+        display: flex;
+      }
+    }
+    .menu-icon {
+      display: block;
+    }
+  }
+}

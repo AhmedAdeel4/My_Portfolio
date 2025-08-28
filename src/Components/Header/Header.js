@@ -1,22 +1,23 @@
-import React from 'react'
-import { Link } from 'react-router-dom'
-// import { Link } from "react-scroll";
-import './Header.css'
+import React, { useState } from 'react'
+import './Header.scss'
 
 export default function Header() {
+    const [open, setOpen] = useState(false);
+
   return (
-    <div className='Header'>
-        <Link className='logo' to='/'>
-            Ahmed
-            <span className='Dot'>.</span>
-        </Link>
-        <nav>
-            <Link className='Link' to='/'>Home</Link>
-            <Link className='Link' to="about">About</Link>
-            <Link className='Link' to='skills'>Skills</Link>
-            <Link className='Link' to='#'>Projects</Link>
-            <Link className='Link' to='#'>Contact</Link>
-        </nav>
-    </div>
+    <nav className='Header'>
+        <a className='logo' href='/'> Ahmed <span className='Dot'>.</span> </a>
+
+        <ul className={`nav ${open ? "open" : ""}`}>
+            <li><a href='#home'>Home</a></li>
+            <li><a href='#about'>About</a></li>
+            <li><a href='#skills'>Skills</a></li>
+            <li><a href='#projects'>Projects</a></li>
+            <li><a href='#contact'>Contact</a></li>
+        </ul>
+
+        <div className='menu-icon' onClick={()=> setOpen(!open)}>☰</div>
+
+    </nav>
   )
 }

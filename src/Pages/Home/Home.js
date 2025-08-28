@@ -214,7 +214,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section id="connect">
+      <section id="contact">
         <h2>Let's Connect</h2>
         <p>
           Have a project in mind or want to discuss opportunities? I'm always
