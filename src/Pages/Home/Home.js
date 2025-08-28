@@ -71,7 +71,7 @@ export default function Home() {
           <span className="get">Get to know the person behind the code</span>
           <div className="shadow mt-5">
             <div className="about">
-              <div className="left col-9">
+              <div className="left ">
                 <div className="top">
                   <h1>Front-end Developer</h1>
                   <p>
@@ -100,15 +100,12 @@ export default function Home() {
                   </div>
                 </div>
               </div>
-              <div className="right col-3 ">
+              <div className="right ">
                 <div className="top">
                   <h2>Personal Info</h2>
                   <div>
                     <div>
                       Name<p>Ahmed Adel</p>
-                    </div>
-                    <div>
-                      Email<p>Ahmadadelcode@gmail.com</p>
                     </div>
                     <div>
                       Location<p>Cairo, Egypt</p>

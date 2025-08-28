@@ -1,7 +1,6 @@
 .contaner {
-  height: 100vh;
-  padding: 0 10rem;
-  padding-bottom: 8rem;
+  min-height: 100vh;
+  padding: 2% 10%;
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
@@ -40,6 +39,7 @@
     font-family: inherit;
     span {
       color: #195fd0;
+      background-color: transparent;
     }
   }
 
@@ -58,12 +58,17 @@
     font-size: 1.2rem;
   }
 
+  .button {
+    background-color: transparent;
+  }
+
   button {
     font-size: 1rem;
     background-color: transparent;
   }
 
   .tools {
+    background-color: transparent;
     span {
       font-size: 1.2rem;
       border: 1px solid #858c97;
@@ -94,11 +99,35 @@
   }
 }
 
+@media (max-width: 768px) {
+  .contaner {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    .Right {
+      margin-right: 0rem;
+      margin-bottom: 2rem;
+    }
+    .Left {
+      padding-left: 0rem;
+      align-items: center;
+    }
+    .tools span {
+      display: inline-block;
+      font-size: 1rem;
+      margin: 0.5rem;
+      .img {
+        margin: 0.3rem 0.7rem;
+      }
+    }
+  }
+}
+
 // -----------------------------------------
 
 .hero_2 {
-  height: 100vh;
-  padding: 0 10rem;
+  min-height: 100vh;
+  padding: 2% 10%;
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
@@ -137,7 +166,7 @@
     .about {
       width: 100%;
       height: auto;
-      padding: 1rem 3rem;
+      padding: 2%;
       margin: 0;
       display: flex;
       flex-direction: row;
@@ -153,7 +182,9 @@
 
 .left {
   padding: 1rem;
+  width: 70%;
   .top {
+    width: 100%;
     text-align: start;
     color: #858c97;
     font-size: 1.2rem;
@@ -172,6 +203,7 @@
   }
 
   .down {
+    width: 100%;
     border: 1px #858c97 solid;
     border-radius: 1rem;
     margin-top: 5rem;
@@ -199,23 +231,25 @@
 
 .right {
   padding: 1rem;
+  width: 30%;
   .top {
-    text-align: start;
+    text-align: center;
     border: 1px #858c97 solid;
     border-radius: 1rem;
-    padding: 0.7rem;
+    padding: 15% 0;
     color: #0a9abeb2;
     background: #06234665;
     h2 {
       color: #a9b0b9;
-      font-size: 1.7rem;
+      font-size: 1.6rem;
       text-decoration: underline;
-      margin-bottom: 1rem;
+      margin-bottom: 10%;
       margin-left: 1rem;
       background-color: transparent;
     }
     div {
-      padding: 0 1rem;
+      display: block;
+      padding: 0 10px;
       background-color: transparent;
       p {
         background-color: transparent;
@@ -228,18 +262,52 @@
   border: 1px #143d80 solid;
   border-radius: 1rem;
   margin-top: 3rem;
-  padding-top: 1rem;
+  padding: 10% 5%;
   color: #858c97;
   h3 {
     padding-bottom: 1rem;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
   }
 }
+
+@media (max-width: 768px) {
+  .hero_2 {
+    padding: 0.2rem 2rem;
+    .shadow {
+      .about {
+        padding: 1rem 1rem;
+        flex-direction: column;
+        align-items: center;
+        .left {
+          .down {
+            width: 100%;
+            padding: 0.2rem 0.8rem;
+          }
+        }
+        .right {
+          width: 100%;
+          .top {
+            display: flex;
+            flex-direction: column;
+            flex-wrap: nowrap;
+            align-content: center;
+            justify-content: center;
+            align-items: center;
+            h2 {
+              margin-left: 0;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
 // ------------------------------------------------------------------------------
 
 .hero_3 {
-  height: 100vh;
-  padding: 0 10rem;
+  min-height: 100vh;
+  padding: 2% 10%;
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
@@ -263,6 +331,7 @@
 }
 
 .box {
+  width: 100%;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -271,9 +340,9 @@
   align-items: center;
 
   .front {
-    width: 30%;
-    height: 98%;
-    padding: 1rem;
+    width: calc((100% - 4rem) /3);
+    height: auto;
+    padding: 1%;
     border: 1px #858c97 solid;
     display: flex;
     flex-direction: column;
@@ -305,7 +374,7 @@
     .tools {
       display: flex;
       flex-direction: row;
-      flex-wrap: nowrap;
+      flex-wrap: wrap;
       align-content: center;
       justify-content: center;
       align-items: center;
@@ -321,9 +390,9 @@
     }
   }
   .developer {
-    width: 30%;
-    height: 98%;
-    padding: 1rem;
+    width: calc((100% - 4rem) /3);
+    height: auto;
+    padding: 1%;
     border: 1px #858c97 solid;
     display: flex;
     flex-direction: column;
@@ -372,9 +441,9 @@
   }
 }
 .git {
-  width: 30%;
-  height: 98%;
-  padding: 1rem;
+  width: calc((100% - 4rem) /3);
+  height: auto;
+  padding: 1%;
   border: 1px #858c97 solid;
   display: flex;
   flex-direction: column;
@@ -422,11 +491,25 @@
   }
 }
 
+@media (max-width: 768px) {
+  .hero_3 {
+    padding: 2% 10%;
+    .box {
+      flex-direction: column;
+      div {
+        display: block;
+        width: 100%;
+        margin-bottom: 1rem;
+      }
+    }
+  }
+}
+
 // ------------------------------------------------------------------------------------------------------------------------------------------
 
 #contact {
-  height: 80vh;
-  padding: 0 10rem;
+  min-height: 80vh;
+  padding: 2% 10%;
   background-color: #0b0e13;
   display: flex;
   flex-direction: column;
@@ -510,6 +593,22 @@
   }
   .social i:hover {
     background-color: #062346;
+  }
+}
+
+@media (max-width:768px){
+  #contact {
+    div {
+      flex-direction: column;
+      div {
+        width: 100%;
+      }
+    }
+    .social {
+      i{
+        margin-bottom: 1rem;
+      }
+    }
   }
 }
 
