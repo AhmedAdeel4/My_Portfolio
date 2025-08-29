@@ -228,7 +228,7 @@ export default function Home() {
           <div>
             <i class="bi bi-envelope-at-fill"></i>
             <h5>Email</h5>
-            <h6>Cairo, Egypt</h6>
+            <h6>ahmadalroby4@gmail.com</h6>
           </div>
 
           <div>
@@ -240,9 +240,9 @@ export default function Home() {
         </div>
 
         <div className="social">
-          <i class="bi bi-github"></i>
-          <i class="bi bi-linkedin"></i>
-          <i class="bi bi-whatsapp"></i>
+          <a href="https://github.com/" target="blank"> <i class="bi bi-github"></i> </a>
+          <a href="https://www.linkedin.com/in/ahmed-adel-b6191b359/" target="blank" > <i class="bi bi-linkedin"></i> </a>
+          <a href="https://mail.google.com/mail/u/0/#inbox" target="blank"> <i class="bi bi-envelope-at-fill"></i> </a>
         </div>
 
       </section>
