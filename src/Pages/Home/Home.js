@@ -29,9 +29,7 @@ export default function Home() {
               <button class="button-l b1 btn btn-primary  m-3">
                 View My Work
               </button>
-              <button class="button-r b2 btn btn-outline-secondary  m-3">
-                Contact Me
-              </button>
+              <a href="#contact"><button class="button-r b2 btn btn-outline-secondary  m-3"> Contact Me </button></a>
             </div>
             <h6 className=" mt-3">Tech I Work With :</h6>
             <div className="tools">
@@ -240,7 +238,7 @@ export default function Home() {
         </div>
 
         <div className="social">
-          <a href="https://github.com/" target="blank"> <i class="bi bi-github"></i> </a>
+          <a href="https://github.com/AhmedAdeel4" target="blank"> <i class="bi bi-github"></i> </a>
           <a href="https://www.linkedin.com/in/ahmed-adel-b6191b359/" target="blank" > <i class="bi bi-linkedin"></i> </a>
           <a href="https://mail.google.com/mail/u/0/#inbox" target="blank"> <i class="bi bi-envelope-at-fill"></i> </a>
         </div>

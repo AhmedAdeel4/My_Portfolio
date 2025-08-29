@@ -20,7 +20,7 @@ export default function Header() {
       </ul>
 
       <div className="social">
-        <a href="https://github.com/" target="blank"> <i class="bi bi-github"></i> </a>
+        <a href="https://github.com/AhmedAdeel4" target="blank"> <i class="bi bi-github"></i> </a>
         <a href="https://www.linkedin.com/in/ahmed-adel-b6191b359/" target="blank" > <i class="bi bi-linkedin"></i> </a>
         <a href="https://mail.google.com/mail/u/0/#inbox" target="blank"> <i class="bi bi-envelope-at-fill"></i> </a>
       </div>
