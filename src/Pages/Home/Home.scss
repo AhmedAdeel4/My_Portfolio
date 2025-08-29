@@ -104,13 +104,24 @@
     display: flex;
     flex-direction: column-reverse;
     justify-content: center;
+    margin-bottom: 5rem;
     .Right {
       margin-right: 0rem;
       margin-bottom: 2rem;
+      img {
+        height: 18rem;
+        width: 18rem;
+      }
     }
     .Left {
       padding-left: 0rem;
       align-items: center;
+      h5 {
+        font-size: 1rem;
+      }
+      h1 {
+        font-size: 3rem;
+      }
     }
     .tools span {
       display: inline-block;
@@ -273,6 +284,9 @@
 @media (max-width: 768px) {
   .hero_2 {
     padding: 0.2rem 2rem;
+    .head {
+      font-size: 3rem;
+    }
     .shadow {
       .about {
         padding: 1rem 1rem;
@@ -282,6 +296,9 @@
           .down {
             width: 100%;
             padding: 0.2rem 0.8rem;
+            h3 {
+              font-size: 1rem;
+            }
           }
         }
         .right {
